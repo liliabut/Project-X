@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Base</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">TODO Liste</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Suche nach Aufgaben...">
+          </div>
+          <button type="submit" class="btn btn-default">Suche</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Kontakt<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+            <li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</a></li>
+            <li><a href="#">GitHub</a></li>
+
+            </ul>
+          </li>
+           <li>
+            <button type="submit" class="navbar-btn btn btn-success "> 
+              <span class="glyphicon glyphicon-plus"></span> </button>
+
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+       </div><!-- /.container-fluid -->
+    </nav>
+    
+    <div class = "navbar navbar-default navbar-fixed-bottom">
+      <div class = "container">
+        <a class = "navbar-btn btn-link btn pull-right"> Impressum</a>
+      </div>
+    </div>
+
+    <!-- Put your page content here! -->
+    <div class="container">
+      <div class="progress">
+         <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:10%">
+            <span class="sr-only">10% Complete</span>
+            <p>10% Complete</p> 
+          </div>
+      </div>
+    </div>
+    <div class = "container"> 
+      <div class="well well-sm"> 
+        <div class="checkbox">
+          <label><input type="checkbox" value=""> Übersichtsseite
+          </label>
+          <span class="pull-right">
+            <button type="button" class="btn btn-warning btn-xs"> 
+              <span class="glyphicon glyphicon-pencil"></span> </button>
+            
+            <button type="button" class="btn btn-danger btn-xs"> 
+              <span class="glyphicon glyphicon-remove"></span> </button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class = "container"> 
+      <div class="well well-sm"> 
+        <div class="checkbox">
+          <label><input type="checkbox" value=""> Impressum 
+          </label>
+          <span class="pull-right">
+            <button type="button" class="btn btn-warning btn-xs"> 
+              <span class="glyphicon glyphicon-pencil"></span> </button>
+            
+            <button type="button" class="btn btn-danger btn-xs"> 
+              <span class="glyphicon glyphicon-remove"></span> </button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class = "container"> 
+      <div class="well well-sm"> 
+        <div class="checkbox">
+          <label><input type="checkbox" value="">  Eine Seite um zu demonstrieren wie ein TODO editiert werden kann
+          </label>
+          <span class="pull-right">
+            <button type="button" class="btn btn-warning btn-xs"> 
+              <span class="glyphicon glyphicon-pencil"></span> </button>
+            
+            <button type="button" class="btn btn-danger btn-xs"> 
+              <span class="glyphicon glyphicon-remove"></span> </button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class = "container"> 
+      <div class="well well-sm"> 
+        <div class="checkbox">
+          <label><input type="checkbox" value=""> 
+            Irgendwas
+          </label>
+          <span class="pull-right">
+            <button type="button" class="btn btn-warning btn-xs"> 
+              <span class="glyphicon glyphicon-pencil"></span> </button>
+
+            <button type="button" class="btn btn-danger btn-xs"> 
+              <span class="glyphicon glyphicon-remove"></span> </button>
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
