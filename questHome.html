@@ -17,7 +17,7 @@
     <![endif]-->
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
+     <nav class="navbar navbar-inverse navbar-default navbar-fixed-top">
       <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -25,19 +25,33 @@
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
+         
           </button>
           <a class="navbar-brand" href="#">QuestBoard</a>
-        </div>
+        </div
           <!-- Collect the nav links, forms, and other content for toggling -->
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-              <li><a href="#">Übersicht</a></li>
+              <li class><a href="#">Übersicht</a></li>
+               <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Quest
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Jutebeutel verloren</a></li>
+            <li><a href="#">Wanted</a></li>
+            <li><a href="#">Mission Impossible</a></li> 
+              
+            </ul>
+          
+        </li>
+       
+        </ul>
+
+          
+            <ul class="nav navbar-nav navbar-right">
               <li><a href="#">Impressum</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="glyphicon glyphicon-plus"></span> Quest einfügen  </a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
+       
         
       </div><!-- /.navbar-collapse -->
       
@@ -54,10 +68,10 @@
       <div class = "row">
           <div class = "col-sm-4">
             <div class = "well well-sm">
-              <h3> Jutebeutel verloren  </h3>
+              <h3><a href="">Jutebeutel verloren</a></h3>
               <p>Stufe: <span class="label label-warning">Mittel</span></p>
               <p>Frist: 09.11.15</p>
-              <p>Auf dem Weg zu Gotham, bin ich über WLan gestolpert und habe mein Jutebeutel im Internet verloren. Helft sie mir zu finden.</p>
+              <p>Auf dem Weg nach Gotham, bin ich über WLan gestolpert und habe mein Jutebeutel im Internet verloren. Helft sie mir zu finden.</p>
 
         
                <div class="progress">
@@ -67,12 +81,12 @@
                 </div>
              </div>
         
-                    <span class="badge">5 Aufgaben</span>
+                    <span class="badge">3 Aufgaben</span>
                
                 <span class="pull-right">
-                  <button type="button" class="btn  btn-xs"> 
-                    <span class="glyphicon glyphicon-pencil"></span> 
-                  </button>
+                  <button type="button" class="btn btn-xs" data-toggle="modal" data-target="#bearbeiten">
+              <span class="glyphicon glyphicon-pencil"></span> 
+            </button>
                   <button type="button" class="btn  btn-xs"> 
                     <span class="glyphicon glyphicon-remove"></span> 
                   </button>
@@ -81,7 +95,7 @@
           </div>
           <div class = "col-sm-4">
             <div class = "well well-sm">
-              <h3>Wanted</h3>
+              <h3><a href="">Wanted</a></h3>
                 <p>Stufe: <span class="label label-danger">Hoch</span></p>
                 <p>Frist: 21.07.16</p>
                 
@@ -97,19 +111,19 @@
                     <span class="badge">120 Aufgaben</span>
                
                 <span class="pull-right">
-                  <button type="button" class="btn  btn-xs"> 
-                    <span class="glyphicon glyphicon-pencil"></span> 
-                  </button>
+                  <button type="button" class="btn btn-xs" data-toggle="modal" data-target="#bearbeiten">
+              <span class="glyphicon glyphicon-pencil"></span> 
+            </button>
                   <button type="button" class="btn  btn-xs"> 
                     <span class="glyphicon glyphicon-remove"></span> 
                   </button>
                 </span>
-               
+          
             </div>
             </div>
             <div class = "col-sm-4">
               <div class = "well well-sm">
-                <h3>Mission Impossible </h3>
+                <h3><a href="">Mission Impossible</a></h3>
                 <p>Stufe: <span class="label label-success">Chill</span></p>
                  <p>Frist: 01.01.90</p>
                 <p>Lecke den Ellenbogen! Lege ein Ei! Fahre bei Mario Kart in die entgegengesetzte Richtung und gewinne!</p>
@@ -124,9 +138,9 @@
                     <span class="badge">3 Aufgaben</span>
                
                 <span class="pull-right">
-                  <button type="button" class="btn  btn-xs"> 
-                    <span class="glyphicon glyphicon-pencil"></span> 
-                  </button>
+                  <button type="button" class="btn btn-xs" data-toggle="modal" data-target="#bearbeiten">
+              <span class="glyphicon glyphicon-pencil"></span> 
+            </button>
                   <button type="button" class="btn  btn-xs"> 
                     <span class="glyphicon glyphicon-remove"></span> 
                   </button>
@@ -136,78 +150,68 @@
           </div>
         </div>
       
-      
+ <!-- Modal für Bearbeiten -->
+<div id="bearbeiten" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
-
-
-
-
-
-
-
-    <!-- Put your page content here! -->
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Quest bearbeiten</h4>
+      </div>
+      <div class="modal-body">
+       <div class = "row">
+        <div class = "col-sm-8">
+       
+  <label for="usr">Name der Quest:</label>
+  <input type="text" class="form-control" id="usr">
+</div>
+<div class = "col-sm-2">
+ <div class="form-group">
+  <label for="sel1">Frist:</label>
+  <input type="text" class="form-control" id="usr">
+</div>
+</div>
+<div class = "col-sm-2">
+ <div class="form-group">
+  <label for="sel1">Stufe:</label>
+  <select class="form-control" id="sel1">
+    <option>keine Auswahl</option>
+    <option>Chill</option>
+    <option>Mittel</option>
+    <option>Hoch</option>
     
-    <!--div class = "container"> 
-      <div class="well well-sm"> 
-        <div class="checkbox">
-          <label><input type="checkbox" value=""> Übersichtsseite
-          </label>
-          <span class="pull-right">
-            <button type="button" class="btn btn-warning btn-xs"> 
-              <span class="glyphicon glyphicon-pencil"></span> </button>
-            
-            <button type="button" class="btn btn-danger btn-xs"> 
-              <span class="glyphicon glyphicon-remove"></span> </button>
-          </span>
-        </div>
-      </div>
-    </div>
-    <div class = "container"> 
-      <div class="well well-sm"> 
-        <div class="checkbox">
-          <label><input type="checkbox" value=""> Impressum 
-          </label>
-          <span class="pull-right">
-            <button type="button" class="btn btn-warning btn-xs"> 
-              <span class="glyphicon glyphicon-pencil"></span> </button>
-            
-            <button type="button" class="btn btn-danger btn-xs"> 
-              <span class="glyphicon glyphicon-remove"></span> </button>
-          </span>
-        </div>
-      </div>
-    </div>
-    <div class = "container"> 
-      <div class="well well-sm"> 
-        <div class="checkbox">
-          <label><input type="checkbox" value="">  Eine Seite um zu demonstrieren wie ein TODO editiert werden kann
-          </label>
-          <span class="pull-right">
-            <button type="button" class="btn btn-warning btn-xs"> 
-              <span class="glyphicon glyphicon-pencil"></span> </button>
-            
-            <button type="button" class="btn btn-danger btn-xs"> 
-              <span class="glyphicon glyphicon-remove"></span> </button>
-          </span>
-        </div>
-      </div>
-    </div>
-    <div class = "container"> 
-      <div class="well well-sm"> 
-        <div class="checkbox">
-          <label><input type="checkbox" value=""> 
-            Irgendwas
-          </label>
-          <span class="pull-right">
-            <button type="button" class="btn btn-warning btn-xs"> 
-              <span class="glyphicon glyphicon-pencil"></span> </button>
+  </select>
+</div>
+</div>
+<div class = "col-sm-12">
+<div class="form-group">
+  <label for="pwd">Beschreibung:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
 
-            <button type="button" class="btn btn-danger btn-xs"> 
-              <span class="glyphicon glyphicon-remove"></span> </button>
-          </span>
-        </div>
+
+  </div>
       </div>
-    </div-->
+
+    </div>
+  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Aktualisieren</button>
+         <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
+      </div>
+    </div>
+
+  </div>
+</div>     
+
+
+
+
+
+
+
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
