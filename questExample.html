@@ -29,7 +29,7 @@
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Quest
               <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="questExample.html">Jutebeutel verloren</a></li>
+                <li class = "active"><a href="questExample.html">Jutebeutel verloren</a></li>
                 <li><a href="#">Wanted</a></li>
                 <li><a href="#">Mission Impossible</a></li> 
               </ul>
@@ -57,15 +57,6 @@
               <p>80% </p> 
             </div>
           </div>
-
-          <span class="pull-right">
-            <button type="button" class="btn btn-xs" data-toggle="modal" data-target="#qbearbeiten">
-              <span class="glyphicon glyphicon-pencil"></span> 
-            </button>
-            <button type="button" class="btn btn-xs">
-              <span class="glyphicon glyphicon-remove"></span> 
-            </button>
-          </span>
         </div>
       </div>
       <div class = "container">
@@ -131,7 +122,7 @@
         </tr>
       </tbody>
     </table>
-    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#einfügen">Punkt einfügen</button>
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#einfügen">Punkt einfügen</button>
 
 
     <!-- Modal für Punkt Einfügen-->
@@ -230,58 +221,6 @@
       </div>
     </div>
 
-    <!-- Modal für Quest Bearbeiten -->
-    <div id="qbearbeiten" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Quest bearbeiten</h4>
-          </div>
-          <div class="modal-body">
-           <div class = "row">
-            <div class = "col-sm-8">
-
-              <label for="usr">Name der Quest:</label>
-              <input type="text" class="form-control" id="usr">
-            </div>
-            <div class = "col-sm-2">
-             <div class="form-group">
-              <label for="sel1">Frist:</label>
-              <input type="text" class="form-control" id="usr">
-            </div>
-          </div>
-          <div class = "col-sm-2">
-           <div class="form-group">
-            <label for="sel1">Stufe:</label>
-            <select class="form-control" id="sel1">
-              <option>keine Auswahl</option>
-              <option>Chill</option>
-              <option>Mittel</option>
-              <option>Hoch</option>
-
-            </select>
-          </div>
-        </div>
-        <div class = "col-sm-12">
-          <div class="form-group">
-            <label for="pwd">Beschreibung:</label>
-            <textarea class="form-control" rows="5" id="comment"></textarea>
-
-
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-default" data-dismiss="modal">Aktualisieren</button>
-      <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
-    </div>
-  </div>
 
 </div>
 </div>
